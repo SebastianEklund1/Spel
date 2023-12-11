@@ -13,7 +13,7 @@ public class Enemy : MonoBehaviour
     public GameObject SCP_Bulletprefab;
     Transform SCP_Bullet_Spawn;
     public float SCP_Bullet_Speed = 10;
-    
+
 
     // Start is called before the first frame update
     void Start()
@@ -45,7 +45,10 @@ public class Enemy : MonoBehaviour
             Vector3 direction = (target.position - transform.position).normalized;
             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
             moveDirection = direction;
+          
         }
+        Instantiate(SCP_Bulletprefab, SCP_Bullet_Spawn.position, SCP_Bullet_Spawn.rotation);
+        SCP_Bulletprefab.GetComponent<Rigidbody2D>().velocity = SCP_Bullet_Spawn.right * SCP_Bullet_Speed;
     }
 
     private void FixedUpdate()
@@ -55,12 +58,9 @@ public class Enemy : MonoBehaviour
             Rb.velocity = new Vector2(moveDirection.x, moveDirection.y) * speed;
         }
 
-       
+
     }
 
-    void Shoot()
-    {
-        Instantiate(SCP_Bulletprefab, SCP_Bullet_Spawn.position, SCP_Bullet_Spawn.rotation);
-        SCP_Bulletprefab.GetComponent<Rigidbody2D>().velocity = SCP_Bullet_Spawn.right * SCP_Bullet_Speed;
-    }
-}
+  
+
+}   
