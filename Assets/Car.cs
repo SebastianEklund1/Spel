@@ -7,7 +7,9 @@ public class Car : MonoBehaviour
 
     public Rigidbody2D Car_rigidbody;
    public GameObject car_2prefab;
-   public GameObject Car_Spawnprefab;   
+   public GameObject Car_Spawnprefab;
+    public Transform Spawn; 
+    
 
     // Start is called before the first frame update
     void Start()
@@ -24,7 +26,7 @@ public class Car : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Destroy(gameObject);
+        
        
     }
 }
