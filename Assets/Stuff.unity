@@ -1234,6 +1234,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   car_2prefab: {fileID: 1118736694592074237, guid: fade568b47a9fbc409713a129ac9b24a, type: 3}
   Car_Spawnprefab: {fileID: 0}
+--- !u!114 &1591900909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1591900898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51d8b497cdd412b47a369d6eb797d64a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hurtAmount: 1
 --- !u!1 &1667061311
 GameObject:
   m_ObjectHideFlags: 0
@@ -1614,6 +1627,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4561249149543107207, guid: fade568b47a9fbc409713a129ac9b24a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1591900908}
+    - targetCorrespondingSourceObject: {fileID: 4561249149543107207, guid: fade568b47a9fbc409713a129ac9b24a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1591900909}
   m_SourcePrefab: {fileID: 100100000, guid: fade568b47a9fbc409713a129ac9b24a, type: 3}
 --- !u!1001 &1237440826113223518
 PrefabInstance:
@@ -1817,8 +1833,7 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 3.57
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1007286943427086408, guid: eb0529f8c72720342acf1db642aac474, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
