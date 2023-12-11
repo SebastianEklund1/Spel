@@ -2,7 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy_SCP : MonoBehaviour
+
+public class SCP_Truck_Movement : MonoBehaviour
+
 {
     public GameObject SCP_Truck;
     [SerializeField] float speed = 5f;
