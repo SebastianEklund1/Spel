@@ -6,6 +6,7 @@ public class NewBehaviourScript : MonoBehaviour
 {
     [SerializeField]
     int hurtAmount = 1;
+    public GameObject MainCarprefab; 
 
     private void OnCollisionEnter2D(Collision2D collision)
     {

@@ -47,10 +47,11 @@ public class SCP_Truck_Movement : MonoBehaviour
             Vector3 direction = (target.position - transform.position).normalized;
             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
             moveDirection = direction;
-          
+
+
+            Instantiate(SCP_Bulletprefab, SCP_Bullet_Spawn.position, SCP_Bullet_Spawn.rotation);
+            SCP_Bulletprefab.GetComponent<Rigidbody2D>().velocity = SCP_Bullet_Spawn.right * SCP_Bullet_Speed;
         }
-        Instantiate(SCP_Bulletprefab, SCP_Bullet_Spawn.position, SCP_Bullet_Spawn.rotation);
-        SCP_Bulletprefab.GetComponent<Rigidbody2D>().velocity = SCP_Bullet_Spawn.right * SCP_Bullet_Speed;
     }
 
     private void FixedUpdate()

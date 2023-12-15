@@ -14,14 +14,14 @@ public class Car : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Car_rigidbody = GetComponent<Rigidbody2D>();
+        Car_rigidbody.AddForce(Vector3.left * 10, ForceMode2D.Impulse);
     }
 
     // Update is called once per frame
     void Update()
     {
-        Car_rigidbody = GetComponent<Rigidbody2D>();
-        Car_rigidbody.AddForce(Vector3.left, ForceMode2D.Impulse);
+        
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

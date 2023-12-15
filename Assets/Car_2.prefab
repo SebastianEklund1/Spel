@@ -12,6 +12,9 @@ GameObject:
   - component: {fileID: 4046634855003961477}
   - component: {fileID: 153723643889048767}
   - component: {fileID: 1118736694592074237}
+  - component: {fileID: 4877600476598299947}
+  - component: {fileID: 5309641936110217768}
+  - component: {fileID: 5194078425185402194}
   m_Layer: 0
   m_Name: Car_2
   m_TagString: Untagged
@@ -29,7 +32,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.54, y: -1.08, z: 0}
-  m_LocalScale: {x: 0.5552, y: 0.4768, z: 1}
+  m_LocalScale: {x: 0.4620374, y: 0.3921203, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -98,7 +101,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -125,3 +128,80 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13caa96a48b391243ad185ad133e08a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Car_rigidbody: {fileID: 153723643889048767}
+  car_2prefab: {fileID: 4561249149543107207}
+  Car_Spawnprefab: {fileID: 4532225586629540104, guid: 3e24fe360f585b946b755f8c4c5d4522, type: 3}
+  Spawn: {fileID: 0}
+--- !u!61 &4877600476598299947
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4561249149543107207}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.03254497, y: -1.1291974}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 6.4, y: 6.4}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 6.3349104, y: 2.9521732}
+  m_EdgeRadius: 0
+--- !u!114 &5309641936110217768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4561249149543107207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d74215eb66f70b246953076528c76ab3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  car_2prefab: {fileID: 1118736694592074237}
+  Car_Spawnprefab: {fileID: 0}
+--- !u!114 &5194078425185402194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4561249149543107207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac60a0c4ca4747146888342699cfe015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hurtAmount: 1
+  MainCarprefab: {fileID: 1974533776785354827, guid: eb0529f8c72720342acf1db642aac474, type: 3}

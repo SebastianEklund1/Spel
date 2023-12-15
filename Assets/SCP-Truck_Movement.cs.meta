@@ -3,7 +3,9 @@ guid: f7cbf843ddde50347b6f090738d54087
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - SCP_Truck: {fileID: 3004656535424656444, guid: dddd0dd3994206245a9b44d0fb35d740, type: 3}
+  - SCP_Bulletprefab: {fileID: 527674099627026802, guid: cc5f22b72d50cb749a27bdd719890674, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

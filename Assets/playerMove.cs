@@ -8,7 +8,6 @@ public class playermovement : MonoBehaviour
 
 
     public Bullet BulletPrefab;
-    public int Player_HP = 3;
     public GameObject MainCarprefab;
 
     // Start is called before the first frame update
@@ -42,10 +41,6 @@ public class playermovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Player_HP -= 1;
-        if(Player_HP == 0)
-        {
-            Destroy(MainCarprefab);
-        }
+        
     }
 }  
